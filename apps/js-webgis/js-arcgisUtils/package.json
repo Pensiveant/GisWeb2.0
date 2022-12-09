@@ -1,0 +1,11 @@
+{
+  "name": "js-arcgisutils",
+  "version": "1.0.0",
+  "description": "原生js编写的ArcGIS工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pensiveant",
+  "license": "ISC"
+}

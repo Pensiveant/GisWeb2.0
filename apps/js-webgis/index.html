@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>导航页</title>
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.25/esri/themes/light/main.css"
+    />
+    <title>创建SceneView</title>
     <style>
       html,
       body {
@@ -16,12 +20,20 @@
         justify-content: center;
         align-items: center;
       }
+      #map-div {
+        width: 100vw;
+        height: 100vh;
+      }
     </style>
   </head>
 
   <body>
-    <div class="guide">
-        测试业
-    </div>
+    <div id="map-div"></div>
   </body>
+  <script type="module">
+    import { initSceneView } from "./js-arcgisUtils/index.js";
+    window.onload = () => {
+      initSceneView("map-div");
+    };
+  </script>
 </html>
