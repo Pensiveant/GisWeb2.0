@@ -94,6 +94,7 @@ let layerFactory = {
   voxel: (props) => {
     return new VoxelLayer(props);
   },
+  // OGC
   wcs: (props) => {
     return new WCSLayer(props);
   },

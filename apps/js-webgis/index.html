@@ -30,8 +30,9 @@
   <body>
     <div id="map-div"></div>
   </body>
-  <script type="module">
-    import { initSceneView } from "./js-arcgisUtils/index.js";
+  <script id="myScript">console.log("测试")</script>
+  <script id="moduleScript" type="module">
+    import { initSceneView } from "./ArcgisUtils/index.js";
     window.onload = () => {
       initSceneView("map-div");
     };
